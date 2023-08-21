@@ -23,4 +23,14 @@ public class HwLesson2 {
             isNumberFloat();
         }
     }
+    
+    private static void isStringEmpty(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Начинайте ввод: ");
+        String str = sc.next();
+        if (str.isEmpty()){
+            throw new RuntimeException("строка не может быть пустой ");
+        }
+        else System.out.println("ок");
+    }
 }
